@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Application</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to Weather Application</h1>
+    <p class="subtitle">Please enter your city to know your current Temperature</p>
+    
+    <div class="card">
+      <div class="search-bar">
+        <input type="text" id="location-input" placeholder="Enter a city" />
+        <button id="search-btn">Search</button>
+      </div>
+    </div>
+    
+    <p class="weather-info">
+      Weather plays a crucial role in our daily lives, impacting agriculture, travel, and even our mood. 
+      Knowing the current temperature helps us plan better and stay safe during extreme weather conditions.
+    </p>
+  </div>
+
+  <div id="popup" class="popup hidden">
+    <div id="popup-content" class="popup-content">
+      <span id="close-popup" class="close-btn">&times;</span>
+      <h2 id="popup-heading"></h2>
+      <div id="weather">
+        <p id="temperature"></p>
+        <p id="atmospheric-phenomenon"></p>
+        <p id="min-temp"></p>
+        <p id="max-temp"></p>
+        <p id="humidity"></p>
+        <p id="pressure"></p>
+        <p id="wind"></p>
+      </div>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
